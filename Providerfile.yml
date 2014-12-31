@@ -1,0 +1,5 @@
+provider:
+  name: putenv-plugin-test
+  version: 0.1.0.pre
+  location: https://github.com/ActiveSCM/putenv-plugin-test.git
+
