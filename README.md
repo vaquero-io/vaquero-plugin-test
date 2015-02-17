@@ -1,4 +1,4 @@
 putenv-plugin-test
 ==================
 
-Mock putenv provider plugin used for unit testing
+Mock putenv provider plugin used for aruba tests

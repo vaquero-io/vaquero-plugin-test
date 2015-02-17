@@ -1,0 +1,9 @@
+file2:
+  #
+  default: &default
+    cpu:
+    ram:
+    drive:
+      mount:
+      capacity:
+    image:

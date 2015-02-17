@@ -3,3 +3,63 @@ provider:
   version: 0.1.0.pre
   location: https://github.com/ActiveSCM/putenv-plugin-test.git
 
+  structure:
+
+    require:
+      - file1
+      - file2
+
+    platform:
+      path:
+      params:
+        count:
+          type: integer
+          range: 1..20
+        runlist:
+          array:
+            type: string
+            match: '(role|recipe)\[([-_a-zA-Z0-9]+)\]'
+        componentrole:
+          type: string
+          match: '(role|recipe)\[([-_a-zA-Z0-9#]+)\]'
+        chefserver:
+          type: string
+          match: '^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$'
+        addresses:
+          array:
+            type: IP
+
+    file1:
+      path: 'required/'
+      params:
+        any_alphanumeric:
+          type: string
+          match: '^(?:[\w-]+\/?)+\z'
+        any_IP:
+          type: IP
+        any_integer:
+          type: integer
+          range: 1..24
+        a_boolean:
+          type: boolean
+
+    file2:
+      path: 'required/'
+      params:
+        ram:
+          type: integer
+          range: 128..262144
+        cpu:
+          type: integer
+          range: 1..16
+        drive:
+          hash:
+            mount:
+              type: string
+              match: '((?:[a-zA-Z]\:){0,1}(?:[\\/][\w.]+){1,})'
+            capacity:
+              type: integer
+              range: 4096..2048000
+        image:
+          type: string
+          match: '^(?:[.\w-]+\/?)+\z'
