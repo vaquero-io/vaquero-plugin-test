@@ -4,4 +4,4 @@ file1:
     any_alphanumeric:
     any_IP:
     any_integer:
-    a_boolean:
+    any_boolean:

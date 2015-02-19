@@ -40,7 +40,7 @@ provider:
         any_integer:
           type: integer
           range: 1..24
-        a_boolean:
+        any_boolean:
           type: boolean
 
     file2:
