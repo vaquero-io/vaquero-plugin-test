@@ -22,9 +22,8 @@ provider:
         componen_trole:
           type: string
           match: '(role|recipe)\[([-_a-zA-Z0-9#]+)\]'
-          type: string
-          match: '^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$'
         chef_server:
+          type: URL
         addresses:
           array:
             type: IP
