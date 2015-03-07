@@ -15,16 +15,16 @@ provider:
         count:
           type: integer
           range: 1..20
-        runlist:
+        run_list:
           array:
             type: string
             match: '(role|recipe)\[([-_a-zA-Z0-9]+)\]'
-        componentrole:
+        componen_trole:
           type: string
           match: '(role|recipe)\[([-_a-zA-Z0-9#]+)\]'
-        chefserver:
           type: string
           match: '^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$'
+        chef_server:
         addresses:
           array:
             type: IP
