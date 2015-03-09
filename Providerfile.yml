@@ -1,7 +1,7 @@
 provider:
   name: putenv-plugin-test
   version: 0.1.0.pre
-  location: https://github.com/ActiveSCM/putenv-plugin-test.git
+  location: https://github.com/activenetwork-automation/putenv-plugin-test.git
 
   structure:
 
@@ -15,16 +15,15 @@ provider:
         count:
           type: integer
           range: 1..20
-        runlist:
+        run_list:
           array:
             type: string
             match: '(role|recipe)\[([-_a-zA-Z0-9]+)\]'
-        componentrole:
+        componen_trole:
           type: string
           match: '(role|recipe)\[([-_a-zA-Z0-9#]+)\]'
-        chefserver:
-          type: string
-          match: '^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$'
+        chef_server:
+          type: URL
         addresses:
           array:
             type: IP
