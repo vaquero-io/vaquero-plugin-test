@@ -19,7 +19,7 @@ provider:
           array:
             type: string
             match: '(role|recipe)\[([-_a-zA-Z0-9]+)\]'
-        componen_trole:
+        component_role:
           type: string
           match: '(role|recipe)\[([-_a-zA-Z0-9#]+)\]'
         chef_server:
