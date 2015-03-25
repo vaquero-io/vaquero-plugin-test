@@ -1,7 +1,7 @@
 provider:
-  name: putenv-plugin-test
+  name: vaquero-plugin-test
   version: 0.1.0.pre
-  location: https://github.com/activenetwork-automation/putenv-plugin-test.git
+  location: https://github.com/vaquero-io/vaquero-plugin-test.git
 
   structure:
 

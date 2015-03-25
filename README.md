@@ -1,4 +1,4 @@
-putenv-plugin-test
+vaquero-plugin-test
 ==================
 
-Mock putenv provider plugin used for aruba tests
+Mock vaquero provider plugin used for aruba tests
